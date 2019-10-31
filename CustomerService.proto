@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+option csharp_namespace = "grpc_scratch.Proto";
+
+package CustomerManagement;
+
+service CustomerService{
+ rpc GetCustomerById (CustomerIdRequest) returns (CustomerResponse);
+}
+
+message CustomerIdRequest {
+  int32 custId = 1;
+}
+
+message CustomerResponse {
+  int32 CustId = 1;
+  string FullName = 2;
+}
