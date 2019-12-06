@@ -16,4 +16,5 @@ message CustomerIdRequest {
 message CustomerResponse {
   int32 CustId = 1;
   string FullName = 2;
+  string Amount = 3;
 }
