@@ -6,6 +6,7 @@ package CustomerManagement;
 
 service CustomerService{
  rpc GetCustomerById (CustomerIdRequest) returns (CustomerResponse);
+ rpc GetCustomerStreamById (CustomerIdRequest) returns (stream CustomerResponse);
 }
 
 message CustomerIdRequest {
